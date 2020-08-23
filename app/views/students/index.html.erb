@@ -1,0 +1,9 @@
+<h1>All Students</h1>
+
+
+
+<% count = 0 %>
+<% @students.each do |student| %>
+    <% count += 1 %>
+    <%= count %>. <%= student.whole_name %></br>
+<% end %>

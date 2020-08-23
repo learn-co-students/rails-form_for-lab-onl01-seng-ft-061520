@@ -1,0 +1,9 @@
+<h1>All School Classes</h1>
+
+
+
+<% count = 0 %>
+<% @school_classes.each do |school_class| %>
+    <% count += 1 %>
+    <%= count %>. <%= school_class.title_and_room %></br>
+<% end %>
